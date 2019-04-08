@@ -48,7 +48,7 @@ public class Configure {
     public final static boolean isDebug = AppUtils.isDebug(AppApplication.getInstance());
 
     //release
-    public final static String HOST_RELEASE = "https://www.youpinying.com/customer-api";
+    public final static String HOST_RELEASE = "http://94.191.5.138:8080";
 
     //QA
 //    public final static String HOST_TEST = "https://www.youpinying.com/customer-api";
