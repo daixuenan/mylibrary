@@ -21,6 +21,15 @@ public class ApiGetRequest {
         }
     }
 
+    //首页
+    public static void getHome(NetWorkCallBack netWorkCallBack) {
+        try {
+            AsyncApiClient.get(Apis.API_GET_HOME, netWorkCallBack);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      * old below
      *

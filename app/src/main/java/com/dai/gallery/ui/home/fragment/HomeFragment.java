@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 
 import com.alibaba.fastjson.JSON;
 import com.dai.gallery.R;
+import com.dai.gallery.bean.HomeListBean;
 import com.dai.gallery.bean.MMBean;
 import com.dai.gallery.network.ApiGetRequest;
 import com.dai.gallery.network.base.BasePageBean;
@@ -51,8 +52,10 @@ public class HomeFragment extends BaseRefreshFragment {
         super.onActivityCreated(savedInstanceState);
 
         initBanner();
+        initHomeList();
 
         loadBanner();
+        loadHomeList();
     }
 
     private void initBanner() {
@@ -63,16 +66,31 @@ public class HomeFragment extends BaseRefreshFragment {
         banner.setDelegate(delegate);
     }
 
+    private void initHomeList() {
+
+    }
+
     private void loadBanner() {
         ApiGetRequest.getBanner(new NetWorkCallBack() {
             @Override
             public void onResponse(boolean isSucceed, int status, String response) {
                 if (isSucceed) {
-                    BasePageBean basePageBean = JSON.parseObject(response, BasePageBean.class);
-                    List<MMBean> bannerList = JSON.parseArray(basePageBean.getList().toString(), MMBean.class);
+                    List<MMBean> bannerList = JSON.parseArray(response, MMBean.class);
                     if (bannerList != null && bannerList.size() > 0) {
                         banner.setData(bannerList, null);
                     }
+                }
+            }
+        });
+    }
+
+    private void loadHomeList() {
+        ApiGetRequest.getHome(new NetWorkCallBack() {
+            @Override
+            public void onResponse(boolean isSucceed, int status, String response) {
+                if (isSucceed) {
+                    List<HomeListBean> homeListBeans = JSON.parseArray(response, HomeListBean.class);
+
                 }
             }
         });

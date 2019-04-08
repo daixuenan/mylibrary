@@ -20,9 +20,9 @@
         <com.dai.mylibrary.widget.tablayout.BottomTabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/default_height_60"
+            android:layout_height="@dimen/height_60"
             android:background="@color/white"
-            android:elevation="@dimen/default_elevation_10"
+            android:elevation="@dimen/elevation_10"
             app:tabBackground="@android:color/transparent"
             app:tabGravity="fill"
             app:tabIndicatorHeight="0dp"

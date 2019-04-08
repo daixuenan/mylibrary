@@ -15,6 +15,8 @@ public class Apis {
     //banner
     public final static String API_GET_BANNER = HOST + "/api/mm/banner";
 
+    //首页list
+    public final static String API_GET_HOME = HOST + "/api/mm/home";
     /**
      * POST
      */
@@ -176,7 +178,7 @@ public class Apis {
     public final static String API_GET_DEBT_PAY_DETAIL = HOST + "/project/queryCreditorPayDetail";
 
     //首页数据
-    public final static String API_GET_HOME = HOST + "/home";
+//    public final static String API_GET_HOME = HOST + "/home";
 
     //智投支付详情页
     public final static String API_GET_PAY_INVEST_AUTO_DETAIL = HOST + "/monthly/payDetail";

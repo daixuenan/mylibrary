@@ -1,44 +1,44 @@
 <resources>
 
-    <!--宽高尺寸-->
-    <dimen name="default_width_45">45dp</dimen>
-
-    <dimen name="default_height">@dimen/default_height_50</dimen>
-    <dimen name="default_height_20">20dp</dimen>
-    <dimen name="default_height_30">30dp</dimen>
-    <dimen name="default_height_40">40dp</dimen>
-    <dimen name="default_height_45">45dp</dimen>
-    <dimen name="default_height_50">50dp</dimen>
-    <dimen name="default_height_60">60dp</dimen>
+    <!--状态栏高度-->
+    <dimen name="status_bar_height">25dp</dimen>
 
     <!--默认圆角-->
     <dimen name="default_corner">10dp</dimen>
 
-    <!--状态栏高度-->
-    <dimen name="status_bar_height">25dp</dimen>
+    <!--宽高尺寸-->
+    <dimen name="width_45">45dp</dimen>
+
+    <dimen name="default_height">@dimen/height_50</dimen>
+    <dimen name="height_20">20dp</dimen>
+    <dimen name="height_30">30dp</dimen>
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="height_45">45dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="height_60">60dp</dimen>
 
     <!--padding值-->
-    <dimen name="default_padding">@dimen/default_padding_10</dimen>
-    <dimen name="default_padding_5">5dp</dimen>
-    <dimen name="default_padding_10">10dp</dimen>
-    <dimen name="default_padding_15">15dp</dimen>
-    <dimen name="default_padding_20">20dp</dimen>
-    <dimen name="default_padding_25">25dp</dimen>
-    <dimen name="default_padding_30">30dp</dimen>
-    <dimen name="default_padding_35">35dp</dimen>
-    <dimen name="default_padding_40">40dp</dimen>
-    <dimen name="default_padding_45">45dp</dimen>
-    <dimen name="default_padding_50">50dp</dimen>
-    <dimen name="default_padding_60">60dp</dimen>
-    <dimen name="default_padding_70">70dp</dimen>
-    <dimen name="default_padding_75">75dp</dimen>
-    <dimen name="default_padding_80">80dp</dimen>
+    <dimen name="default_padding">@dimen/padding_15</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_25">25dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_35">35dp</dimen>
+    <dimen name="padding_40">40dp</dimen>
+    <dimen name="padding_45">45dp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+    <dimen name="padding_60">60dp</dimen>
+    <dimen name="padding_70">70dp</dimen>
+    <dimen name="padding_75">75dp</dimen>
+    <dimen name="padding_80">80dp</dimen>
 
     <!--elevation-->
-    <dimen name="default_elevation_1">1dp</dimen>
-    <dimen name="default_elevation_5">5dp</dimen>
-    <dimen name="default_elevation_10">10dp</dimen>
-    <dimen name="default_elevation_20">20dp</dimen>
+    <dimen name="elevation_1">1dp</dimen>
+    <dimen name="elevation_5">5dp</dimen>
+    <dimen name="elevation_10">10dp</dimen>
+    <dimen name="elevation_20">20dp</dimen>
 
     <!--//线条粗细-->
     <dimen name="default_line">1dp</dimen>

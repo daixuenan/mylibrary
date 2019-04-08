@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/default_padding_15"
+        android:layout_marginLeft="@dimen/padding_15"
         android:text="标签"
         android:textColor="@color/black_3"
         android:textSize="@dimen/text_size_14" />
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/default_padding_15"
+        android:layout_marginRight="@dimen/padding_15"
         android:text="内容"
         android:textColor="#CCCCCC"
         android:textSize="@dimen/text_size_14" />

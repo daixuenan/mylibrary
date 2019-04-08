@@ -20,8 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/default_padding"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="@dimen/default_padding_15"
-        android:layout_marginRight="@dimen/default_padding_15"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
         android:layout_marginTop="@dimen/default_padding"
         android:max="100" />
 
@@ -29,21 +29,21 @@
         android:id="@+id/tvUpdateProgress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/default_padding_15"
+        android:layout_marginLeft="@dimen/padding_15"
         android:layout_marginTop="@dimen/default_padding"
         android:textSize="@dimen/text_size_10" />
 
     <View
         style="@style/line"
-        android:layout_marginTop="@dimen/default_padding_15" />
+        android:layout_marginTop="@dimen/padding_15" />
 
     <Button
         android:id="@+id/btnCancel"
         android:layout_width="match_parent"
         android:layout_height="@dimen/default_height"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="@dimen/default_padding_15"
-        android:layout_marginRight="@dimen/default_padding_15"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
         android:background="@null"
         android:text="取   消"
         android:textColor="@color/text_color_gray"

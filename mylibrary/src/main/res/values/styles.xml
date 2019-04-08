@@ -32,7 +32,7 @@
 
     <style name="rough_line" parent="@style/line">
         <!-- Customize your theme here. -->
-        <item name="android:layout_height">@dimen/default_padding_15</item>
+        <item name="android:layout_height">@dimen/default_padding</item>
     </style>
 
     <!-- iOS7 Style -->

@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/default_padding_25"
+        android:layout_marginTop="@dimen/padding_25"
         android:textColor="@color/text_color"
         android:textSize="@dimen/text_size_13" />
 
