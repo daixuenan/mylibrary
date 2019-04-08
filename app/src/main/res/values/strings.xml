@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">极迅贷</string>
+
+    <string name="UMENG_APPKEY">5c8f74b961f5649a4a0001c8</string>
+
+    <string name="UMENG_MESSAGE_SECERT">37f612d3496d46e1379f09897760c243</string>
+    <string name="UMENG_APP_MASTER_SECRET">v3ttzgocxvbjghl0vmcosyfibpi6sigz</string>
+
+    <string name="WECHAT_APPID">wx14896832c09096f8</string>
+</resources>

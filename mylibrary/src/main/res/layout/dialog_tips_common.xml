@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--android:background="@drawable/shape_bg_rect_cornor_white"-->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="温馨提示" />
+    <!--android:layout_marginTop="@dimen/default_padding_20"-->
+    <!--android:textColor="@color/main_color"-->
+    <!--android:textSize="@dimen/default_text_size"-->
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--android:layout_marginLeft="@dimen/default_padding_25"-->
+    <!--android:layout_marginRight="@dimen/default_padding_25"-->
+    <!--android:layout_marginTop="@dimen/default_padding_25"-->
+    <!--android:textColor="@color/black_3"-->
+    <!--android:textSize="@dimen/text_size_13"-->
+
+    <!--<View-->
+    <!--style="@style/LineStyle"-->
+    <!--android:layout_marginTop="@dimen/default_padding_20" />-->
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="我知道了" />
+    <!--android:layout_height="@dimen/default_height"-->
+    <!--android:background="@drawable/shape_bg_rect_cornor_bottom_white"-->
+    <!--android:textColor="@color/link_text_color"-->
+    <!--android:textSize="@dimen/default_text_size"-->
+
+</LinearLayout>

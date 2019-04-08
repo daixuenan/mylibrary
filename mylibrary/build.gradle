@@ -1,0 +1,77 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                //ARouter
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        ndk { abiFilters "armeabi", "x86" }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    api 'com.android.support:design:27.1.0'
+
+    //Application
+    api 'com.android.support:multidex:1.0.1'
+
+    //network
+//    api 'com.loopj.android:android-async-http:1.4.9'
+
+    //fastjson
+    api 'com.alibaba:fastjson:1.2.51'
+
+    //eventbus
+    api 'org.greenrobot:eventbus:3.1.1'
+
+    //refresh library
+    api 'com.github.dkzwm:SmoothRefreshLayout:1.3.2'
+
+    //Glide
+//    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    //RxJava
+    api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    api 'io.reactivex.rxjava2:rxjava:2.x.y'
+
+    //banner
+    api 'com.youth.banner:banner:1.4.10'
+
+    //ARouter
+    api 'com.alibaba:arouter-api:1.4.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+    //ActionSheet
+    api 'com.baoyz.actionsheet:library:1.1.7'
+
+    //images
+    api 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+
+    //multidex
+    api 'com.android.support:multidex:1.0.0'
+}

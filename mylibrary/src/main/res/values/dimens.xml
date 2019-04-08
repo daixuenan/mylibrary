@@ -1,0 +1,72 @@
+<resources>
+
+    <!--宽高尺寸-->
+    <dimen name="default_width_45">45dp</dimen>
+
+    <dimen name="default_height">@dimen/default_height_50</dimen>
+    <dimen name="default_height_20">20dp</dimen>
+    <dimen name="default_height_30">30dp</dimen>
+    <dimen name="default_height_40">40dp</dimen>
+    <dimen name="default_height_45">45dp</dimen>
+    <dimen name="default_height_50">50dp</dimen>
+    <dimen name="default_height_60">60dp</dimen>
+
+    <!--默认圆角-->
+    <dimen name="default_corner">10dp</dimen>
+
+    <!--状态栏高度-->
+    <dimen name="status_bar_height">25dp</dimen>
+
+    <!--padding值-->
+    <dimen name="default_padding">@dimen/default_padding_10</dimen>
+    <dimen name="default_padding_5">5dp</dimen>
+    <dimen name="default_padding_10">10dp</dimen>
+    <dimen name="default_padding_15">15dp</dimen>
+    <dimen name="default_padding_20">20dp</dimen>
+    <dimen name="default_padding_25">25dp</dimen>
+    <dimen name="default_padding_30">30dp</dimen>
+    <dimen name="default_padding_35">35dp</dimen>
+    <dimen name="default_padding_40">40dp</dimen>
+    <dimen name="default_padding_45">45dp</dimen>
+    <dimen name="default_padding_50">50dp</dimen>
+    <dimen name="default_padding_60">60dp</dimen>
+    <dimen name="default_padding_70">70dp</dimen>
+    <dimen name="default_padding_75">75dp</dimen>
+    <dimen name="default_padding_80">80dp</dimen>
+
+    <!--elevation-->
+    <dimen name="default_elevation_1">1dp</dimen>
+    <dimen name="default_elevation_5">5dp</dimen>
+    <dimen name="default_elevation_10">10dp</dimen>
+    <dimen name="default_elevation_20">20dp</dimen>
+
+    <!--//线条粗细-->
+    <dimen name="default_line">1dp</dimen>
+
+    <!--字体大小-->
+    <dimen name="default_text_size">@dimen/text_size_15</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_23">23sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="text_size_26">26sp</dimen>
+    <dimen name="text_size_27">27sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_29">29sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_35">35sp</dimen>
+    <dimen name="text_size_45">45sp</dimen>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--顶部透明栏-->
+    <color name="status_bar_color">@color/white</color>
+
+    <!--主色-->
+    <color name="main_color">#FF6C3B</color>
+
+    <!--链接文字-->
+    <color name="link_text_color">#454E62</color>
+
+    <!--背景颜色-->
+    <color name="background_color">#F1F1F1</color>
+
+    <!--间隔线-->
+    <color name="default_line_color">#DDDBDA</color>
+
+    <!--正文文字颜色-->
+    <color name="text_color">@color/gray_light</color>
+
+    <!--提示文字颜色-->
+    <color name="text_color_hint">#DDDBDA</color>
+
+    <!--按钮底部文字颜色-->
+    <color name="text_color_gray">#666666</color>
+
+    <!--黑色-->
+    <color name="black_3">#333333</color>
+    <color name="black_6">#666666</color>
+    <color name="black_9">#999999</color>
+
+    <!--红色-->
+    <color name="red_color">#FF001F</color>
+
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+
+    <!--common-->
+    <color name="white">#FFFFFF</color>
+    <color name="gray_bg">#e6e6e6</color>
+    <color name="gray_c0">#C0C0C0</color>
+    <color name="gray_light">#413835</color>
+    <color name="orange">#FFC124</color>
+</resources>
