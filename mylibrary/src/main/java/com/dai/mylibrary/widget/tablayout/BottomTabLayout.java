@@ -47,7 +47,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.dai.mylibrary.utils.files.ImageUtils;
+import com.dai.mylibrary.utils.image.ImageUtils;
 import com.dai.mylibrary.widget.tablayout.bean.TabItem;
 import com.dai.mylibrary.widget.tablayout.utils.AnimationUtils;
 import com.dai.mylibrary.widget.tablayout.utils.ThemeUtils;

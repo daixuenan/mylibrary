@@ -97,7 +97,6 @@ public class AsyncApiClient {
         if (!TextUtils.isEmpty(Configure.DEVICE_TOKEN)) {
             client.addHeader("DEVICE_ID", Configure.DEVICE_TOKEN);
         }
-        client.addHeader("CHANNEL_SOURCE", "app");
         client.addHeader("PHONE_MODEL", android.os.Build.MODEL);
         client.addHeader("APP_VERSION", Configure.APP_VERSION);
         client.addHeader("SYSTEM_VERSION", android.os.Build.VERSION.RELEASE);

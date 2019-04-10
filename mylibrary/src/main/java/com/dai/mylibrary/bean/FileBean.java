@@ -1,8 +1,8 @@
-package com.dai.gallery.bean;
+package com.dai.mylibrary.bean;
 
 import java.io.Serializable;
 
-public class MMBean implements Serializable {
+public class FileBean implements Serializable {
 
     private String useragent;
     private String description;

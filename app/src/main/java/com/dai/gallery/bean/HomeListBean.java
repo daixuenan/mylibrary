@@ -1,12 +1,14 @@
 package com.dai.gallery.bean;
 
+import com.dai.mylibrary.bean.FileBean;
+
 import java.io.Serializable;
 import java.util.List;
 
 public class HomeListBean implements Serializable {
 
     private MMTypeBean type;
-    private List<MMBean> list;
+    private List<FileBean> list;
 
     public MMTypeBean getType() {
         return type;
@@ -16,11 +18,11 @@ public class HomeListBean implements Serializable {
         this.type = type;
     }
 
-    public List<MMBean> getList() {
+    public List<FileBean> getList() {
         return list;
     }
 
-    public void setList(List<MMBean> list) {
+    public void setList(List<FileBean> list) {
         this.list = list;
     }
 }

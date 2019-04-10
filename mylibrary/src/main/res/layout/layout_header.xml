@@ -3,7 +3,7 @@
     android:id="@+id/header"
     android:layout_width="match_parent"
     android:layout_height="@dimen/default_height"
-    android:background="@color/white">
+    android:background="@color/background_color">
 
     <View
         android:id="@+id/bgViewHead"
@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:textColor="#010101"
+        android:textColor="@color/white"
         android:textSize="@dimen/text_size_18" />
 
     <ImageView

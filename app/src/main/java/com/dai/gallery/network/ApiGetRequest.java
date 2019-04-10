@@ -30,6 +30,26 @@ public class ApiGetRequest {
         }
     }
 
+    //get MM by type
+    public static void getMMByType(String type, int page, NetWorkCallBack netWorkCallBack) {
+        try {
+            String url = String.format("%s?type=%s&page=%d", Apis.API_GET_MM_LIST, type, page);
+            AsyncApiClient.get(url, netWorkCallBack);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    //get MM list
+    public static void getMMDetailList(String folder, NetWorkCallBack netWorkCallBack) {
+        try {
+            String url = String.format("%s?folder=%s", Apis.API_GET_MM_DETAIL_LIST, folder);
+            AsyncApiClient.get(url, netWorkCallBack);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      * old below
      *

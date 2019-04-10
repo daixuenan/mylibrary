@@ -1,4 +1,4 @@
-package com.dai.mylibrary.utils.files;
+package com.dai.mylibrary.utils.image;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -34,7 +34,7 @@ public class ImageUtils {
     public static void loadMMImage(Context context, String url, String refer, String useragent, ImageView imageView) {
         GlideUrl glideUrl = new GlideUrl(url, new LazyHeaders.Builder()
                 .addHeader("referer", refer)
-                .addHeader("User-Agent", "useragent")
+                .addHeader("User-Agent", useragent)
                 .build());
         Glide.with(context).load(glideUrl).apply(new RequestOptions().transform(new RoundedCorners(DpPxSpUtils.dip2px(6)))).into(imageView);
     }

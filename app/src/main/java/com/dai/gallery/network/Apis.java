@@ -17,6 +17,12 @@ public class Apis {
 
     //首页list
     public final static String API_GET_HOME = HOST + "/api/mm/home";
+
+    //MM list
+    public final static String API_GET_MM_LIST = HOST + "/api/mm/mmlist";
+
+    //MM list
+    public final static String API_GET_MM_DETAIL_LIST = HOST + "/api/mm/detaillist";
     /**
      * POST
      */

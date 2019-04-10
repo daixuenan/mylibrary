@@ -1,4 +1,7 @@
 <resources>
 
     <string name="no_more_data">没有更多数据</string>
+
+    <!-- 图片查看 ViewImage -->
+    <string name="viewpager_indicator">%1$d/%2$d</string>
 </resources>

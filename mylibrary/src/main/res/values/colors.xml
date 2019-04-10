@@ -5,7 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <!--顶部透明栏-->
-    <color name="status_bar_color">@color/white</color>
+    <color name="status_bar_color">@color/background_color</color>
 
     <!--主色-->
     <color name="main_color">#FF6C3B</color>
@@ -14,7 +14,7 @@
     <color name="link_text_color">#454E62</color>
 
     <!--背景颜色-->
-    <color name="background_color">#F1F1F1</color>
+    <color name="background_color">@color/black_3</color>
 
     <!--间隔线-->
     <color name="default_line_color">#DDDBDA</color>

@@ -5,8 +5,10 @@
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/rlType"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/default_height">
+        android:layout_height="@dimen/default_height"
+        android:background="@color/background_color">
 
         <TextView
             android:id="@+id/tvType"
@@ -14,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/default_padding"
-            android:textColor="@color/text_color"
+            android:textColor="@color/white"
             android:textSize="@dimen/default_text_size" />
 
         <ImageView
