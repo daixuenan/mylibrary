@@ -66,11 +66,14 @@ public class MainActivity extends BaseActivity {
     private void init() {
         List<BaseFragment> pageList = new ArrayList<>();
         pageList.add(HomeFragment.newInstant());
+//        pageList.add(TestFragment.newInstant());
         pageList.add(MeFragment.newInstant());
         pageFragmentAdapter = new PageFragmentAdapter(getSupportFragmentManager(), pageList);
         viewPager.setOffscreenPageLimit(pageList.size());
         viewPager.setAdapter(pageFragmentAdapter);
         tabLayout.setupWithViewPager(viewPager);
+
+
     }
 
     private void initPermissions() {

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+        <com.dai.mylibrary.widget.MyInnerScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/main_color"
+                android:gravity="center"
+                android:text="啊\n实\n打\n实\n大\n苏\n打\n实\n打\\n实\n\n大\n苏\n苏\n打\n实\n打\\n实\n\n大\n苏\n苏\n打\n实\n打\\n实\n\n大\n苏\n苏\n打\n实\n打\\n实\n\n大\n苏\n打\n实\n打\n实\n打\n实\n大\n苏\n打"
+                android:textColor="@color/white" />
+        </com.dai.mylibrary.widget.MyInnerScrollView>
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="@dimen/default_padding"-->
+    <!--android:layout_marginTop="@dimen/default_padding"-->
+    <!--android:background="@color/main_color">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="啊\n实\n打\n实\n大\n苏\n打\n实\n打\\n实\n\n大\n苏\n打\n实\n打\n实\n打\n实\n大\n苏\n打"-->
+    <!--android:textColor="@color/white" />-->
+
+    <!--</RelativeLayout>-->
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+</RelativeLayout>

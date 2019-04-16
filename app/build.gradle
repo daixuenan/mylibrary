@@ -58,4 +58,6 @@ dependencies {
     implementation files('libs/umeng-common-2.0.2.jar')
     implementation files('libs/utdid4all-1.1.5.3_proguard.jar')
     implementation project(':push')
+
+    implementation 'com.github.castorflex.verticalviewpager:library:19.0.1'
 }
