@@ -13,7 +13,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.dai.mylibrary.R;
-import com.dai.mylibrary.widget.dialogs.base.BaseDialog;
+import com.dai.plugin.basedialog.base.BaseDialog;
+import com.dai.plugin.basedialog.bean.DialogBean;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -23,7 +24,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class DownloadDialog extends BaseDialog {
+public class DownloadDialog extends BaseDialog<DialogBean> {
 
     public DownloadDialog(@NonNull Context context) {
         super(context);
