@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.daixuenan'
+group = 'com.github.daixuenan'
 
 android {
     compileSdkVersion 27
@@ -78,6 +78,11 @@ dependencies {
     api 'com.android.support:multidex:1.0.0'
 
     //BaseDialog
-    api 'com.github.daixuenan:BaseDialog:v1.0.0'
-//    api 'com.gitee.daixnasdasdas:BaseDialog:1.0.0'
+    api 'com.github.daixuenan:BaseDialog:v1.0.1'
+
+    //bottomtablelayout
+    api 'com.github.daixuenan:bottomtablelayout:v1.0.2'
+
+    //viewimage
+    api 'com.github.daixuenan:imageutils:v1.0.1'
 }

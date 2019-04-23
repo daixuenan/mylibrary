@@ -1,13 +1,12 @@
 package com.dai.gallery.ui.home.fragment;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -21,13 +20,14 @@ import com.dai.gallery.ui.base.BaseRefreshFragment;
 import com.dai.gallery.utils.Configure;
 import com.dai.mylibrary.bean.FileBean;
 import com.dai.mylibrary.utils.image.ImageUtils;
-import com.dai.mylibrary.widget.photoview.ViewImageActivity;
+import com.dai.plugin.imageutils.PhotoView;
+import com.dai.plugin.imageutils.ViewImageActivity;
+import com.dai.plugin.imageutils.interfaces.OnLoadImageListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import cn.bingoogolapple.bgabanner.BGABanner;
 
 public class HomeFragment extends BaseRefreshFragment {
@@ -64,7 +64,6 @@ public class HomeFragment extends BaseRefreshFragment {
 
         loadBanner();
         loadHomeList();
-
     }
 
     private void initBanner() {
@@ -126,17 +125,22 @@ public class HomeFragment extends BaseRefreshFragment {
     private BGABanner.Delegate delegate = new BGABanner.Delegate() {
         @Override
         public void onBannerItemClick(BGABanner banner, View itemView, @Nullable Object model, int position) {
-            if (model instanceof FileBean) {
-                ApiGetRequest.getMMDetailList(((FileBean) model).getFoldername(), new NetWorkCallBack() {
-                    @Override
-                    public void onResponse(boolean isSucceed, int status, String response) {
-                        if (isSucceed) {
-                            List<FileBean> detailList = JSON.parseArray(response, FileBean.class);
-                            ViewImageActivity.start(activity, detailList, 0);
-                        }
+            ApiGetRequest.getMMDetailList(((FileBean) model).getFoldername(), new NetWorkCallBack() {
+                @Override
+                public void onResponse(boolean isSucceed, int status, String response) {
+                    if (isSucceed) {
+                        List<FileBean> detailList = JSON.parseArray(response, FileBean.class);
+                        ViewImageActivity.start(activity, detailList, new OnLoadImageListener() {
+                            @Override
+                            public void onLoadImage(Context context, Object bean, PhotoView imageView) {
+                                if (bean instanceof FileBean) {
+                                    ImageUtils.loadMMImage(context, ((FileBean) bean).getDownloadurl(), ((FileBean) bean).getRefer(), ((FileBean) bean).getUseragent(), imageView);
+                                }
+                            }
+                        });
                     }
-                });
-            }
+                }
+            });
         }
     };
 }

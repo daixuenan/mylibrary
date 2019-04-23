@@ -17,7 +17,7 @@ import com.dai.gallery.ui.base.BaseFragment;
 import com.dai.gallery.ui.home.fragment.HomeFragment;
 import com.dai.gallery.ui.me.fragment.MeFragment;
 import com.dai.gallery.utils.Configure;
-import com.dai.mylibrary.widget.tablayout.BottomTabLayout;
+import com.dai.plugin.bottomtablelayout.BottomTabLayout;
 import com.luck.picture.lib.permissions.Permission;
 import com.luck.picture.lib.permissions.RxPermissions;
 

@@ -55,7 +55,8 @@ public class Configure {
     //debug
 //    public final static String HOST_TEST = "http://test.xinjucai.com:8282";
 //    public final static String HOST_TEST = "http://172.168.10.9:10086";
-    public final static String HOST_TEST = "http://172.168.10.15:8080";
+//    public final static String HOST_TEST = "http://172.168.10.15:8080";
+    public final static String HOST_TEST = "http://94.191.5.138:8080/spider/";
 //    public final static String HOST_TEST = "http://47.101.210.191:10086";
     //沈业翔
 //    public final static String HOST_TEST = "http://172.168.10.1:10086";

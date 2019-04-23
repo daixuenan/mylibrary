@@ -17,7 +17,7 @@
 
         <View style="@style/line" />
 
-        <com.dai.mylibrary.widget.tablayout.BottomTabLayout
+        <com.dai.plugin.bottomtablelayout.BottomTabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_60"

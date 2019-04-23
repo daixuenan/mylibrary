@@ -18,7 +18,9 @@ import com.dai.mylibrary.adapter.base.BaseRecyclerViewAdapter;
 import com.dai.mylibrary.adapter.base.BaseRecyclerViewHolder;
 import com.dai.mylibrary.utils.DpPxSpUtils;
 import com.dai.mylibrary.utils.image.ImageUtils;
-import com.dai.mylibrary.widget.photoview.ViewImageActivity;
+import com.dai.plugin.imageutils.PhotoView;
+import com.dai.plugin.imageutils.ViewImageActivity;
+import com.dai.plugin.imageutils.interfaces.OnLoadImageListener;
 
 import java.util.List;
 
@@ -57,7 +59,14 @@ public class MMAdapter extends BaseRecyclerViewAdapter {
                     public void onResponse(boolean isSucceed, int status, String response) {
                         if (isSucceed) {
                             List<FileBean> detailList = JSON.parseArray(response, FileBean.class);
-                            ViewImageActivity.start(ctx, detailList, 0);
+                            ViewImageActivity.start(ctx, detailList, new OnLoadImageListener() {
+                                @Override
+                                public void onLoadImage(Context context, Object bean, PhotoView imageView) {
+                                    if (bean instanceof FileBean) {
+                                        ImageUtils.loadMMImage(context, ((FileBean) bean).getDownloadurl(), ((FileBean) bean).getRefer(), ((FileBean) bean).getUseragent(), imageView);
+                                    }
+                                }
+                            });
                         }
                     }
                 });
