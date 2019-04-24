@@ -85,4 +85,7 @@ dependencies {
 
     //viewimage
     api 'com.github.daixuenan:imageutils:v1.0.1'
+
+    //boardmenu
+    api 'com.github.daixuenan:boardmenu:v1.0.0'
 }
